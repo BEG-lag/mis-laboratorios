@@ -1,0 +1,17 @@
+{
+  "name": "mis-laboratorios: tus análisis clínicos en una línea de tiempo",
+  "short_name": "Mis laboratorios",
+  "description": "Organiza y grafica tus resultados de laboratorio en tu navegador, sin subir nada. No interpreta ni diagnostica.",
+  "lang": "es-MX",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a0c10",
+  "theme_color": "#0a0c10",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
