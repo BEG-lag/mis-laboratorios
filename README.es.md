@@ -1,4 +1,8 @@
 <p align="center">
+  <a href="https://pivotek.mx"><img src="assets/pivotek-logo.svg" alt="PIVOTEK" width="200"></a>
+</p>
+
+<p align="center">
   <img src="assets/banner.svg" alt="mis-laboratorios: PDF de resultados entran a una ventana del navegador y se convierten en una gráfica en el tiempo con la franja del rango del laboratorio, sin salir del dispositivo" width="100%">
 </p>
 

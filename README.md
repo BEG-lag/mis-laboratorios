@@ -1,4 +1,8 @@
 <p align="center">
+  <a href="https://pivotek.mx"><img src="assets/pivotek-logo.svg" alt="PIVOTEK" width="200"></a>
+</p>
+
+<p align="center">
   <img src="assets/banner.svg" alt="mis-laboratorios: lab result PDFs flow into a browser window and become a chart over time with the lab's reference band, without leaving the device" width="100%">
 </p>
 
