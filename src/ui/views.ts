@@ -20,6 +20,7 @@ export function shellHtml(lang: Lang, ocrSizeMb: string): string {
 <header class="top">
   <div class="wrap">
     <a class="brand" href="./" aria-label="mis-laboratorios">${icons.logo}<span>mis<span class="dim">-laboratorios</span></span></a>
+    <a class="pvk" href="https://pivotek.mx" title="PIVOTEK"><img class="pvk-logo" src="${import.meta.env.BASE_URL}pivotek-logotipo-naranja.svg" alt="PIVOTEK" width="90" height="34"><img class="pvk-iso" src="${import.meta.env.BASE_URL}pivotek-isotipo-naranja.svg" alt="PIVOTEK" width="21" height="24"></a>
     <div class="badges" aria-hidden="true">
       <span class="badge">${h(t('privacy.local'))}</span>
       <span class="badge">${h(t('privacy.zero'))}</span>

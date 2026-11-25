@@ -794,7 +794,16 @@ function mount(): void {
   clearOptionsCache();
   document.documentElement.lang = state.lang === 'es' ? 'es-MX' : 'en';
   document.title = t('app.title');
-  root.innerHTML = shellHtml(state.lang, String(OCR_MB));
+  // El logo de PIVOTEK no cambia con el idioma: al volver a montar se conserva el mismo nodo para que
+  // sus imágenes no se pidan otra vez. El <template> es inerte, así que las <img> de la copia nueva
+  // nunca cargan: se vacía antes de insertarla y en su lugar se pone el logo que ya estaba.
+  const shell = document.createElement('template');
+  shell.innerHTML = shellHtml(state.lang, String(OCR_MB));
+  const pvk = root.querySelector('.pvk');
+  const slot = pvk ? shell.content.querySelector('.pvk') : null;
+  slot?.replaceChildren();
+  root.replaceChildren(shell.content);
+  if (pvk && slot) slot.replaceWith(pvk);
   bindGlobal();
   bindDropzone();
   bindReview();

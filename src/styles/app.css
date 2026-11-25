@@ -142,6 +142,47 @@ a:hover {
   color: var(--lime);
 }
 
+/* Logo de PIVOTEK junto al nombre del sitio (naranja sobre tinta; isotipo en pantallas angostas). */
+.pvk {
+  display: flex;
+  align-items: center;
+  flex: none;
+  height: 22px;
+  padding-left: 16px;
+  border-left: 1px solid var(--line);
+}
+
+.pvk:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+/* Ajuste óptico: la línea base de "pivotek" (o del isotipo) cae en la del nombre del sitio. */
+.pvk img {
+  display: block;
+  transform: translateY(2px);
+}
+
+.pvk .pvk-iso {
+  display: none !important;
+  transform: translateY(4px);
+}
+
+@media (max-width: 459px) {
+  .pvk .pvk-logo {
+    display: none !important;
+  }
+
+  .pvk .pvk-iso {
+    display: block !important;
+  }
+}
+
+/* Si el encabezado pasa a dos renglones (pantallas muy angostas o tabletas), que no quede pegado al borde. */
+.top .wrap {
+  padding-block: 8px;
+}
+
 .badges {
   display: flex;
   gap: 8px;
